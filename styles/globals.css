@@ -1,9 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -104,4 +111,29 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.Open {
+  font-family: "Open Sans", sans-serif;
+}
+
+.Carme {
+  font-family: "Carme", sans-serif;
+}
+
+.gradient {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) -0.03%,
+    #1b9727 54.51%,
+    rgba(255, 255, 255, 0) 100.03%
+  );
+}
+
+:where(.css-dev-only-do-not-override-i0102m).ant-collapse
+  > .ant-collapse-item
+  > .ant-collapse-header {
+  color: #fff !important;
+  height: 80px !important ;
+  background: #1a401f !important;
 }
