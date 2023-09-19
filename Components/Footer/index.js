@@ -11,7 +11,7 @@ const index = () => {
                 <div class="mx-6 py-10 text-center md:text-left">
                     <div class="grid-1 grid Open gap-8 md:grid-cols-2 lg:grid-cols-4">
                         <div class="">
-                            <Image src={'logo.svg'} width={200} height={200} />
+                            <Image src={'logo.svg'} width={200} height={200} className='mx-auto md:mx-0' />
                             <p className='mt-4'>
                                 Unit 2b, New Mills. Libby’s Drive, Stroud GL5
                                 1RN United Kingdom

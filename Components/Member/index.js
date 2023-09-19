@@ -2,11 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 const index = () => {
     return (
-        <div className=' relative'>
-            <img src="/green.svg" alt="Background Image" class="w-full h-auto" />
+        <div className='h-[30vh] md:h-auto relative'>
+            <img src="/green.svg" alt="Background Image" class="w-full h-auto hidden md:block" />
             <div class="absolute inset-0 bg-[#1A401FC9] "></div>
-            <div className=' flex flex-col  absolute inset-0  md:flex-row justify-center gap-x-10    items-center px-6 max-w-[1300px] mx-auto py-[50px] '>
-                <div className='max-w-[438px]'>
+            <div className=' flex flex-col  absolute inset-0  md:flex-row justify-center gap-x-10   items-center px-6 max-w-[1300px] mx-auto py-[50px] '>
+                <div className='max-w-[438px] text-center'>
                     <h5 class="mb-2 text-[22px] font-semibold tracking-tight text-[#fff]">Become a Member</h5>
                     <p class="mb-3 font-normal text-[#fff]">Join us in our rewilding and reforestation mission, and stay up to date with the progress!</p>
                 </div>

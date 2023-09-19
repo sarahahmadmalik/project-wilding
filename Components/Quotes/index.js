@@ -10,9 +10,9 @@ const index = () => {
                 <figure class="max-w-screen-md mx-auto text-center">
 
                     <blockquote className='flex flex-col justify-center items-start'>
-                        <ImQuotesLeft color='#1B243052' />
+                        <ImQuotesLeft color='#1B243052' size={80} />
                         <p class="text-[18px] lowercase Carme font-medium text-[#1B2430]">WE NEED TO TAKE DRASTIC ACTION IF WE&apos;RE TO MAKE AMENDS FOR THE DAMAGE THAT WE&apos;VE CAUSED TO THIS PLANET. SO THAT&apos;S WHAT WE AIM TO DO. BUILDING BACK LANDSCAPES, VITAL HABITATS AND SUSTAINABLE ECO-SYSTEMS FOR OUR BEAUTIFUL PLANET, ALL ITS INHABITANTS AND FUTURE GENERATIONS.</p>
-                        <ImQuotesRight color='#1B243052' className='self-end' />
+                        <ImQuotesRight color='#1B243052' className='self-end' size={80} />
 
                     </blockquote>
                     <div class="flex items-center justify-center mt-6 space-x-3">

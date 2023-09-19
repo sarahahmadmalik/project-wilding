@@ -84,7 +84,7 @@ const index = () => {
                 <div className='w-full md:w-[50%]'>
                     <h1 className='Open text-[24px] lg:text-[40px] font-bold  text-[#000] mb-[20px] '>Our FAQs</h1>
 
-                    <Collapse expandIconPosition='right' items={items} className='w-full' bordered={false} defaultActiveKey={['1']} />
+                    <Collapse expandIconPosition='end' items={items} className='w-full' bordered={false} defaultActiveKey={['1']} />
                 </div>
             </div>
         </div>
