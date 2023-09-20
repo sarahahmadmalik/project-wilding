@@ -37,9 +37,9 @@ const index = () => {
                     </div>
 
 
-                    <button className='bg-[#1A401F] mt-6 flex justify-center max-w-[290px] items-center rounded-[66px]  py-3 px-8'>
+                    <a href='/' className='bg-[#1A401F] mt-6 flex justify-center max-w-[290px] items-center rounded-[66px]  py-3 px-8'>
                         Join us on our mission <Image className='mt-2 ml-2' src={'/arrow.svg'} width={15} height={15} />
-                    </button>
+                    </a>
                 </div>
 
 

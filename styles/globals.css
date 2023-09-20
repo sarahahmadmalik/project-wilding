@@ -139,7 +139,7 @@ a {
 }
 .menuIcon {
   width: 30px;
-  height: 22px;
+  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -148,10 +148,10 @@ a {
 
 .menuIcon .bar {
   background-color: black; 
-  height: 3px;
+  height: 2px;
   width: 100%;
   transition: 0.4s;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .menuIcon.active .bar:nth-child(1) {
@@ -161,7 +161,7 @@ a {
 .menuIcon.active .bar:nth-child(2) {
   transform: translateX(180%);
   opacity: 50%;
- 
+  
   
 }
 
@@ -173,3 +173,16 @@ a {
   background-color: white;
 }
 
+.floating-input>input::placeholder {
+  color: transparent;
+}
+
+.floating-input>input:focus,
+.floating-input>input:not(:placeholder-shown) { 
+@apply pt-5
+}
+
+.floating-input>input:focus~label, 
+.floating-input>input:not(:placeholder-shown)~label {
+@apply opacity-75 scale-75 -translate-y-3 translate-x-1; 
+}

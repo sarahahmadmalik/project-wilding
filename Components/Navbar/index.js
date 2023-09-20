@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { useRouter } from "next/navigation";
 
@@ -16,6 +16,40 @@ const index = () => {
   const closeMenu = () => {
     setNav(false);
   };
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    // Function to close the dropdown when clicking outside of it
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    }
+
+    // Add the event listener when the dropdown is open
+    if (isDropdownOpen) {
+      window.addEventListener("click", handleClickOutside);
+    }
+
+    // Clean up the event listener when the component unmounts or the dropdown closes
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
+  }, [isDropdownOpen]);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleLogin = () => {
+    // Redirect to the login page when the "Login" button is clicked
+    router.push("/login");
+    // Close the dropdown after redirection (optional)
+    setIsDropdownOpen(false);
+  };
+
   return (
     <div
       className={` max-w-screen-xl px-5 mx-auto
@@ -58,9 +92,12 @@ const index = () => {
         {/* right */}
         <div className="hidden md:flex items-center gap-10">
           {/* sign in */}
-          <div className="flex  items-center space-x-2 pl-2  rounded-md">
-            <button onClick={() => router.push("")}>
-              <img src="/profile.svg" alt="" className="" />
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={handleLogin}
+              className="flex items-center space-x-2 rounded-md bg-[#1a401f] px-12 font-[500] py-3 "
+            >
+              Login
             </button>
           </div>
           {/* start a project  */}
@@ -81,7 +118,7 @@ const index = () => {
           }
         >
           <div className="flex flex-col mt-[-3.5rem] ">
-            <div className="flex flex-col-reverse basis-[50%]">
+            <div className="flex flex-col basis-[50%]">
               <ul className="flex flex-col justify-start items-start gap-5 text-2xl font-bold mt-3">
                 <button
                   onClick={() => router.push("/")}
@@ -113,9 +150,12 @@ const index = () => {
                 </Link>
               </ul>
               <div className="flex flex-col justify-start items-start gap-y-6 mt-5">
-                <Link href={"/"}>
-                  <button onClick={closeMenu}>
-                    <img src="/profile.svg" alt="" className="" />
+                <Link href={"/"} onClick={handleLogin}>
+                  <button
+                    onClick={closeMenu}
+                    className="flex items-center space-x-2 rounded-md bg-[#1a401f] px-12 font-[500] py-3 "
+                  >
+                    Login
                   </button>
                 </Link>
               </div>
