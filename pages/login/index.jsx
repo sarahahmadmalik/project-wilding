@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 const index = () => {
     return (
         <div className='flex flex-col justify-start py-20 items-center gap-24 h-screen w-full'>
@@ -17,7 +17,7 @@ const index = () => {
                         <input type="password" id="password" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-12" placeholder="password" autocomplete="off" />
                         <label for="password" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">Password</label>
                     </div>
-                    <button class="w-full bg-[#1a401f] hover:bg-[#0e2612] ease-in duration-200 transition-all text-white py-2 text-[18px] rounded-md ">Login</button>
+                    <Link href="/user/" class="w-full bg-[#1a401f] hover:bg-[#0e2612] ease-in duration-200 transition-all text-white py-2 text-[18px] rounded-md ">Login</Link>
                 </form>
 
 
