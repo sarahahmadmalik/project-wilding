@@ -1,7 +1,7 @@
 import AccountSettingsCard from '@/components/AccountSettingsCard';
 import React from 'react';
 import BillingInformation from '@/components/BillingInformation'
-import App from '@/components/App'
+import App from '@/Components/AppCard'
 import AccountInformation from '@/components/AccountInformation'
 import DashboardLayout from '@/layout/DashboardLayout'
 import {useRouter } from 'next/router';

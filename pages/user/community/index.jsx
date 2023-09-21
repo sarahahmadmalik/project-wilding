@@ -2,7 +2,7 @@ import React from "react";
 import DashboardLayout from "@/layout/DashboardLayout";
 import { useRouter } from "next/router";
 import { CopyOutlined, FacebookOutlined, TwitterOutlined, WhatsAppOutlined, MailOutlined } from '@ant-design/icons';
-import App from '@/Components/App'
+import App from '@/Components/AppCard'
 import FollowUsCard from '@/Components/FollowUsCard'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; // Import slick carousel styles

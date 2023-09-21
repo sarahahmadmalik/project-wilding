@@ -78,7 +78,7 @@ const First = () => {
         },
     ]
     return (
-        <div className='w-1/2 fontFamily mx-auto py-20'>
+        <div className='md:w-1/2 w-full px-[1.7rem] fontFamily md:mx-auto py-20'>
             <h1 className='text-[32px] text-black font-[900] pb-5'>
                 Hello, <br />
                 Matt!
