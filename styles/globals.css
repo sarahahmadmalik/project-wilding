@@ -203,3 +203,103 @@ a {
   min-width: 90px !important;
 } 
 
+/* faq */
+.container-faq {
+  width: 90vw;
+  max-width: 700px;
+  display: grid;
+}
+
+.main-faq {
+  /* using flex because of better browser support */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.container > h3 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.question-title {
+  padding: 1rem 1.5rem;
+}
+.text-info {
+  padding: 2rem 1.5rem;
+}
+.question {
+  position: sticky;
+  margin-bottom: 2rem;
+  border-radius: 5rem;
+  background: white;
+  border-radius: 0.25rem;
+}
+.question > h4 {
+  text-transform: none;
+  line-height: 1.5;
+}
+.question > p {
+  color: hsl(0, 0%, 0%);
+  padding-bottom: 0;
+  padding-top: 0.5rem;
+  background-color: white;
+}
+.question > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question > header > h4 {
+  margin-bottom: 0;
+}
+.btn-zzz {
+  background: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+
+.question-title {
+  cursor: pointer;
+}
+
+
+
+.slide {
+  margin-right: 10px !important /* Add margin between images */
+}
+
+/* Customize the appearance of arrows */
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #367560;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+  opacity: 1;
+}
+
+.slider-container {
+  margin: 20px 0; /* Add margin between the slider and other content */
+}

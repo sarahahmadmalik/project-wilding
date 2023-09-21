@@ -1,9 +1,9 @@
-import React from 'react'
-
-function Updates() {
+import Image from 'next/image'
+import First from '@/components/first/First'
+export default function Home() {
   return (
-    <div>index</div>
+  <div>
+    <First/>
+  </div>
   )
 }
-
-export default Updates
