@@ -4,13 +4,15 @@ import BillingInformation from '@/components/BillingInformation'
 import App from '@/components/App'
 import AccountInformation from '@/components/AccountInformation'
 import DashboardLayout from '@/layout/DashboardLayout'
+import {useRouter } from 'next/router';
 function Index() {
+  const router = useRouter();
   return (
     <DashboardLayout>
     <div className="w-full fontFamily h-full px-[2.3rem] py-[1rem]">
       <div className='flex w-full justify-between items-center'>
         <h1 className='font-[800] text-[26px] text-black'>Account Settings</h1>
-        <button className='text-[#367560] rounded-md font-[500] text-[18px] transition bg-transparent hover:bg-[#d4efe6be]  py-2 px-4 '>
+        <button onClick={() => router.push("/")} className='text-[#367560] rounded-md font-[500] text-[18px] transition bg-transparent hover:bg-[#d4efe6be]  py-2 px-4 '>
           Logout
         </button>
       </div>
