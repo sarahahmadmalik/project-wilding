@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import First from '@/components/first/First'
+import First from '@/Components/first/First'
 export default function Home() {
   return (
   <div>
