@@ -1,8 +1,8 @@
-import AccountSettingsCard from '@/components/AccountSettingsCard';
+import AccountSettingsCard from '@/Components/AccountSettingsCard';
 import React from 'react';
-import BillingInformation from '@/components/BillingInformation'
+import BillingInformation from '@/Components/BillingInformation'
 import App from '@/Components/AppCard'
-import AccountInformation from '@/components/AccountInformation'
+import AccountInformation from '@/Components/AccountInformation'
 import DashboardLayout from '@/layout/DashboardLayout'
 import {useRouter } from 'next/router';
 function Index() {

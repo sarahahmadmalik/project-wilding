@@ -4,7 +4,7 @@ import routes from "@/routes/routes";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import CustomMenuItem from '@/components/CustomMenuItem';
+import CustomMenuItem from '@/Components/CustomMenuItem';
 const { Sider } = Layout;
 
 const Sidebar = ({ role }) => {
