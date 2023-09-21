@@ -78,12 +78,12 @@ const First = () => {
         },
     ]
     return (
-        <div className='w-1/2 mx-auto py-20'>
-            <h1 className='text-[32px] font-[900] pb-5'>
+        <div className='w-1/2 fontFamily mx-auto py-20'>
+            <h1 className='text-[32px] text-black font-[900] pb-5'>
                 Hello, <br />
                 Matt!
             </h1>
-            <div className='flex flex-col gap-10 justify-center items-center'>
+            <div className='flex flex-col gap-10 justify-center text-black items-center'>
                 {
                     data.map((item, index) => (
                         <div key={index} className='flex flex-col'>

@@ -1,6 +1,9 @@
 import React from 'react'
+import DashboardLayout from "@/layout/DashboardLayout";
+import {useRouter} from 'next/router'
 
 const Third = () => {
+    const router = useRouter();
     const data = [
         {
             id: 1,
@@ -32,24 +35,25 @@ const Third = () => {
         },
     ]
     return (
-        <div>
+        <DashboardLayout>
+        <div className="fontFamily px-[2.3rem] py-[1rem]">
             <div className='flex flex-col justify-center items-center gap-4'>
-                <h1 className='text-[32px] font-[700]  pt-20'>
+                <h1 className='text-[24px] font-[700] text-[#2F3542]  '>
                     Fund extra campaigns 💚
                 </h1>
-                <p className='py-5'>
+                <p className=' text-[#2F3542]'>
                     Here you can put extra money towards a particular campaign,
                     <a href="
-            " className='underline'>
+            " className='underline text-[#2F3542]'>
                         or click here for a page to share with others to contribute to your impact
                     </a>
                 </p>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-16'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-16 my-5'>
                     {
                         data.map((item, i) => (
-                            <div key={i} className='flex flex-col justify-start items-start gap-4 text-left w-[600px] rounded-lg shadow '>
+                            <div key={i} className='flex text-black flex-col bg-white justify-start items-start gap-4 text-left w-[500px] rounded-lg shadow '>
                                 <img src={item.img} alt="" className='md:w-[600px] md:h-[300px] object-cover rounded-t-lg' />
-                                 <div className='p-5 flex flex-col gap-4'>
+                                 <div className='p-5 flex flex-col gap-4 bg-white overflow-hidden rounded-lg'>
 
                                 <h1 className='text-[24px] font-[700]'>
                                     {item.title}
@@ -60,7 +64,7 @@ const Third = () => {
                                 <p>
                                 Price: <span>  {item.price} </span>   increments
                                 </p>
-                                <button className='bg-[#1a401f] py-3 px-6 text-white rounded-md w-[140px]'>
+                                <button onClick={() => router.push("/user/fund-extra/id?")} className='bg-[#1a401f] py-3 px-6 text-white rounded-md w-[140px]'>
                                     Contribute
                                 </button>
 
@@ -73,6 +77,7 @@ const Third = () => {
 
             </div>
         </div>
+        </DashboardLayout>
     )
 }
 
