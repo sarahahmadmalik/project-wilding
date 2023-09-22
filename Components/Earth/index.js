@@ -5,17 +5,18 @@ const index = () => {
   return (
     <div className="bg-[#fff]">
       <div className="  flex flex-col-reverse lg:flex-row justify-between items-center gap-x-10   px-6 max-w-[1300px] mx-auto py-[50px] md:py-[100px]">
-        <div className="w-full lg:w-[50%]">
+        <div className="w-full md:w-[70%] mt-4">
           <Image
+
             src={"/handingdownearth.jpg"}
-            width={695}
-            height={396}
-            className="w-[400px] object-cover rounded-2xl"
+            width={800}
+            height={410}
+            className="w-full object-cover rounded-2xl"
           />
         </div>
 
         <div className="flex w-full lg:w-[50%] flex-col gap-y-4 justify-start items-center">
-          <h2 className="Open text-[24px] self-start text-[#000000] lg:text-[40px] font-bold    ">
+          {/* <h2 className="Open text-[24px] self-start text-[#000000] lg:text-[40px] font-bold    ">
             Access to our private nature reserves
           </h2>
           <p class="font-normal text-[#1B2430]">
@@ -23,7 +24,7 @@ const index = () => {
             of our nature reserves will be members only to reduce footfall. This
             enables us to minimise the disturbance to wildlife that has made its
             home within and to protect these crucial areas.
-          </p>
+          </p> */}
           <br />
           <ol class="relative">
             <div className="bg-[#1A401F] absolute -left-2.5 top-1 w-[10px] h-[300px] sm:h-[240px] lg:h-[250px]"></div>
@@ -66,14 +67,8 @@ const index = () => {
             </li>
           </ol>
 
-          <button className="bg-[#1A401F] mt-6 flex self-start justify-center items-center rounded-[66px]  py-3 px-8">
+          <button className="bg-[#1A401F] mt-8 flex self-start justify-center items-center rounded-[66px]  py-3 px-8">
             Join the community today{" "}
-            <Image
-              className="mt-2 ml-2"
-              src={"/arrow.svg"}
-              width={15}
-              height={15}
-            />
           </button>
         </div>
       </div>

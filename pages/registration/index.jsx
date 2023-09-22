@@ -82,7 +82,7 @@ const index = () => {
                 <p className='text-[18px] font-[400]'>
                     Choose how much you want to contribute
                 </p>
-                <p className='text-[18px] font-[500] text-center text-[#1a401f] pt-3'>
+                <p className='text-[18px] font-[500] text-center text-white pt-3'>
                     No ongoing commitment. <br />
                     You can cancel, pause, or update the membership at any time.
                 </p>
@@ -109,12 +109,12 @@ const index = () => {
             </div>
             <div className='flex flex-col justify-center items-center pt-10'>
                 <form class="w-[300px] md:w-[600px]">
-                    <div class="floating-input mb-5 relative">
-                        <input type="email" id="email" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full  px-3 h-12" placeholder="" autocomplete="off" />
+                    <div class="mb-3 relative">
+                        <input type="email" id="email" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full  px-3 h-12" placeholder="First Name" autocomplete="off" />
                         <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">First Name</label>
                     </div>
-                    <div class="floating-input mb-5  relative">
-                        <input type="password" id="password" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-12" placeholder="email" autocomplete="off" />
+                    <div class=" mb-3 relative">
+                        <input type="password" id="password" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-12" placeholder="Enter Email" autocomplete="off" />
                         <label for="password" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">Email</label>
                     </div>
                 </form>
@@ -134,7 +134,7 @@ const index = () => {
                             onChange={() => handleOptionChange('monthly')}
                         />
                         <label htmlFor="monthly">Pay Monthly <br />
-                            £5/month
+                            £{count}/month
                         </label>
                     </div>
                     <div className={`flex flex-col items-center gap-2 border w-[300px] py-5 text-center rounded ${selectedOption === 'yearly' ? 'border-green-500' : 'border-gray-300'}`}>
@@ -146,7 +146,7 @@ const index = () => {
                             checked={selectedOption === 'yearly'}
                             onChange={() => handleOptionChange('yearly')}
                         />
-                        <label htmlFor="yearly">Pay Yearly <br /> £60/year</label>
+                        <label htmlFor="yearly">Pay Yearly <br /> £{count}/year</label>
                     </div>
                 </div>
             </div>

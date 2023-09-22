@@ -3,7 +3,7 @@ import React from 'react'
 const index = () => {
     return (<div className='bg-[#000]  w-full h-full'>
 
-        <div className=' flex flex-col items-center justify-center  flex-wrap gap-y-6   items-center px-6 max-w-[1300px] mx-auto py-[80px]'>
+        <div className=' flex flex-col justify-center  flex-wrap gap-y-6   items-center px-6 max-w-[1300px] mx-auto py-[80px]'>
 
             <h2 className='Open text-[24px] max-w-[352px]  text-center text-[#fff] lg:text-[40px] font-bold    '>
                 What We Hope To Achieve        </h2>
@@ -26,7 +26,7 @@ const index = () => {
                             </a>
                         </div>
 
-                        <div class="px-4 pb-2 pt-6 bg-[#ffffff] ">
+                        <div class="px-4 pb-1 pt-4 bg-[#ffffff] ">
                             <h5
                                 class="mb-2 text-xl mt-3 font-medium leading-tight text-[#1B2430]">
                                 GIFTING LAND BACK TO NATURE                     </h5>
@@ -75,7 +75,7 @@ const index = () => {
                 <div className='relative  h-full transition ease-in-out delay-250 '>
 
                     <div
-                        class="block  max-w-[350px] w-full w-full  bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
+                        class="block  max-w-[350px] w-full  bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
                         <div
                             class="relative overflow-hidden  bg-cover z-0 bg-no-repeat w-full "
                             data-te-ripple-init

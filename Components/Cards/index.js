@@ -28,15 +28,15 @@ const index = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-10 '>
             {
                 data.map((item, i) => (
-                    <div key={i} className={`${item.id == 2 ? 'md:-translate-y-8' : '' } cursor-pointer group flex flex-col relative justify-start overflow-hidden gap-3 items-start w-[320px] md:w-[380px] shadow-lg rounded-[10px] `}>
+                    <div key={i} className={`${item.id == 2 ? 'md:-translate-y-8' : '' } cursor-pointer group flex flex-col relative justify-start overflow-hidden gap-3 pb-4 items-start w-[320px] md:w-[380px] shadow-lg rounded-[10px] `}>
                         <img
                             className="rounded-t-[10px] overflow-hidden max-h-[285px] w-[320px] md:w-[380px] object-cover group-hover:scale-105 ease-in duration-300 transition-all "
                             src={item.img}
                             alt=""
                              />
-                             <div className='bg-[#1A401F] rounded-[5px] flex justify-center items-center h-[50px] w-[50px] absolute top-[40%] md:top-[48%] left-[5%] z-50'>0{item.id}</div>
-                            <div className='px-6 py-3 space-y-2'>
-                        <p className='text-[24px] font-[700] text-black'>
+                             <div className='bg-[#1A401F] rounded-[5px] flex justify-center items-center h-[50px] w-[50px] absolute top-[40%] md:top-[47%] left-[5%] z-50'>0{item.id}</div>
+                            <div className='px-6 pt-[1.4rem] pb-3 space-y-2'>
+                        <p className='text-[24px] font-[700] text-black mt-2'>
                             {item.title}
                         </p>
                         <p className='text-[16px] text-black font-[400]'>
