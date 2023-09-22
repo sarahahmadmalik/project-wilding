@@ -12,7 +12,7 @@ import Mission from "@/Components/Mission/index"
 import Blogs from "@/Components/Blog/index";
 import Member from "@/Components/Member/index"
 import Footer from "@/Components/Footer/index"
-import React from 'react'
+
 export default function Home() {
   return (
     <>
@@ -34,7 +34,5 @@ export default function Home() {
     </>
   )
 }
-
-
 
 

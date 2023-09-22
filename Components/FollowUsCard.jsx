@@ -1,5 +1,5 @@
 import React from "react";
-import {  YoutubeOutlined, InstagramOutlined } from '@ant-design/icons';
+import {  YoutubeOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
 import Link from 'next/link'
 import Image from 'next/image'
 function FollowUsCard() {
@@ -34,18 +34,22 @@ function FollowUsCard() {
         </Link>
         <Link href="#" classame="flex items-center" target="_blank" rel="noopener noreferrer">
           <YoutubeOutlined style={{ fontSize: '35px' }} />
-          YouTube
+          <p>YouTube</p>
         </Link>
         <Link href="#" classame="flex items-center" target="_blank" rel="noopener noreferrer">
           <InstagramOutlined style={{ fontSize: '35px' }} />
           <p>Instagram</p>
         </Link>
-          <Image
+          {/* <Image
             src="/images/link.png" // Replace with your YouTube logo image path
             alt="YouTube"
            width={130}
            height={100}
-          />
+          /> */}
+          <Link href="#" classame="flex items-center" target="_blank" rel="noopener noreferrer">
+          <LinkedinOutlined style={{ fontSize: '35px'}}/>
+          <p>Instagram</p>
+        </Link>
       
       </div>
     </div>

@@ -22,12 +22,12 @@ const Sidebar = ({ role }) => {
 
   return (
     <Sider
-      style={{ paddingTop: "1rem", background: "#FFFFFF" }}
+      style={{ paddingTop: "2rem", background: "#FFFFFF" }}
       className="hidden md:block"
     >
       <div className="flex items-center justify-center">
         <div>
-          <Image src={"/images/logo.png"} width={40} height={40} />
+          <Image src={"/images/logo.png"} width={40} height={40} style={{cursor: 'pointer'}} onClick={() => router.push('/')}/>
         </div>
       </div>
       <div

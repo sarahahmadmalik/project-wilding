@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-
+import { FaUserCircle } from 'react-icons/fa';
 import { useRouter } from "next/navigation";
 
 import { useState } from "react";
@@ -99,6 +99,15 @@ const index = () => {
             >
               Login
             </button>
+          </div>
+          <div className="relative" ref={dropdownRef} style={{cursor: 'pointer'}}>
+            {/* <button
+              onClick={handleLogin}
+              className="flex items-center space-x-2 rounded-md bg-[#1a401f] px-12 font-[500] py-3 "
+            >
+              Login
+            </button> */}
+            <FaUserCircle size={30} onClick={() => router.push('/user')}/>
           </div>
           {/* start a project  */}
         </div>
