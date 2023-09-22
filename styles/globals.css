@@ -204,6 +204,16 @@ a {
   width: 100% !important;
 }
 
+.custom-content {
+  padding-left: 10rem;
+}
+
+@media (max-width: 768px) {
+  .custom-content {
+    padding-left: 0;
+  }
+}
+
 /* Customize the appearance of arrows */
 .custom-prev-arrow,
 .custom-next-arrow {

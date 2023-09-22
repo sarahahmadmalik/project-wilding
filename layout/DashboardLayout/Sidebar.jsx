@@ -24,6 +24,7 @@ const Sidebar = ({ role }) => {
   
       <Sider
         width={200}
+        className="hidden md:block"
         style={{
           paddingTop: "2rem",
           background: "#FFFFFF",
