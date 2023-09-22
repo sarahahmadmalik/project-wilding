@@ -33,28 +33,28 @@ const Team = () => {
             img: "/man4.png",
             name: "DAVID J CLEMENS BSC",
             occupation: "Herpetology",
-            desc: " with a focus on non-native species in the UK, population dynamics, and disease.",
+            desc: "We’re currently building our team. If you have expertise to offer, please get in touch",
         },
         {
             id: 2,
             img: "/man3.png",
-            name: "Lorem Ipsum",
-            occupation: "LOREM ",
-            desc: " with a focus on non-native species in the UK, population dynamics, and disease.",
+            name: "Coming Soon",
+            occupation: "",
+            desc: "We’re currently building our team. If you have expertise to offer, please get in touch",
         },
         {
             id: 3,
             img: "/man3.png",
-            name: "Lorem Ipsum",
-            occupation: "LOREM ",
-            desc: " with a focus on non-native species in the UK, population dynamics, and disease.",
+            name: "Coming Soon",
+           
+            desc: "We’re currently building our team. If you have expertise to offer, please get in touch",
         },
         {
             id: 4,
             img: "/man3.png",
-            name: "Lorem Ipsum",
-            occupation: "LOREM ",
-            desc: " with a focus on non-native species in the UK, population dynamics, and disease.",
+            name: "Coming Soon",
+            occupation: "",
+            desc: "We’re currently building our team. If you have expertise to offer, please get in touch",
         },
     ]
     return (
