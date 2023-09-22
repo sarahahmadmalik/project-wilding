@@ -17,13 +17,13 @@ const Team = () => {
         {
             id: 3,
             img: "/man3.png",
-            name: "Lorem Ipsum",
+            name: "Morgan Richards",
             occupation: "LOREM ",
         },
         {
             id: 4,
             img: "/man3.png",
-            name: "Lorem Ipsum",
+            name: "Daisy Hulland",
             occupation: "LOREM ",
         },
     ]

@@ -23,7 +23,7 @@ const AboutCards = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-5 '>
             {
                 data.map((item, i) => (
-                    <div key={i} className='flex flex-col justify-start gap-3 items-start max-w-[320px] md:max-w-[400px] shadow-lg rounded-b-[10px]'>
+                    <div key={i} className='flex flex-col pb-9 justify-start gap-3 items-start max-w-[320px] md:max-w-[400px] shadow-lg rounded-b-[10px]'>
                         <img
                             className="rounded-t-[10px] h-[285px] w-[320px] md:w-[400px] object-cover"
                             src={item.img}

@@ -27,7 +27,7 @@ const Sidebar = ({ role }) => {
     >
       <div className="flex items-center justify-center">
         <div>
-          <Image src={"/images/logo.png"} width={40} height={40} style={{cursor: 'pointer'}} onClick={() => router.push('/')}/>
+          <Image src={"/logo.png"} width={100} height={100} style={{cursor: 'pointer'}} onClick={() => router.push('/')}/>
         </div>
       </div>
       <div

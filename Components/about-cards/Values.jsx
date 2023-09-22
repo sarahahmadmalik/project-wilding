@@ -21,7 +21,7 @@ const Values = () => {
     ]
     return (
         <div>
-            <div className='flex flex-col justify-center items-center md:h-[80vh] bg-white py-32'>
+            <div className='flex flex-col justify-center items-center  bg-white py-14  md:pt-15 md:pb-32'>
                 <div className='max-w-screen-xl'>
                     <h1 className='text-[40px] font-[700] text-black text-center'>
                         Our Values
@@ -30,8 +30,8 @@ const Values = () => {
                         {
                             data.map((items, i) => (
                                 <div className='flex flex-col justify-center items-center gap-6'>
-                                    <div className='bg-white shadow-xl rounded-full w-[201px] h-[201px] flex justify-center items-center'>
-                                        <img src={items.img} alt='' className='w-[90px]' />
+                                    <div className='bg-white shadow-xl rounded-full w-[140px] h-[140px] flex justify-center items-center'>
+                                        <img src={items.img} alt='' className='w-[60px]' />
                                     </div>
                                     <p className='text-[24px] font-[600] text-black'>{items.title}</p>
                                 </div>

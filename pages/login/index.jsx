@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useRouter } from 'next/router'
 const index = () => {
+    const router = useRouter();
     return (
         <div className='flex flex-col justify-start py-20 items-center gap-24 h-screen w-full'>
             <img src="/logo.png" alt="" className="w-[200px]" />
@@ -17,11 +18,11 @@ const index = () => {
                         <input type="password" id="password" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-12" placeholder="password" autocomplete="off" />
                         <label for="password" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">Password</label>
                     </div>
-                    <button class="w-full bg-[#1a401f] hover:bg-[#0e2612] ease-in duration-200 transition-all text-white py-2 text-[18px] rounded-md ">Login</button>
+                    <button type="button"  onClick={() => router.push("/user/")} class="w-full bg-[#1a401f] hover:bg-[#0e2612] ease-in duration-200 transition-all text-white py-2 text-[18px] rounded-md ">Login</button>
                 </form>
 
 
-                <a href="/reset-password" className='text-[#1a401f] text-[20px] py-3 font-[500] hover:underline tracking-tighter'>Forget password?</a>
+                <a  href="/reset-password" className='text-[#1a401f] text-[20px] py-3 font-[500] hover:underline tracking-tighter'>Forget password?</a>
             </div>
             <div className='flex flex-col justify-end items-center '>
                 <p className='text-[20px]  font-[500]'>Don't have an account yet?</p>
