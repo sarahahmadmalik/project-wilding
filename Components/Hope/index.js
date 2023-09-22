@@ -3,7 +3,7 @@ import React from 'react'
 const index = () => {
     return (<div className='bg-[#000]  w-full h-full'>
 
-        <div className=' flex flex-col justify-center  flex-wrap gap-y-6   items-center px-6 max-w-[1300px] mx-auto py-[80px]'>
+        <div className=' flex flex-col justify-center  flex-wrap gap-y-6   items-center px-6 max-w-[1300px] mx-auto py-[60px]'>
 
             <h2 className='Open text-[24px] max-w-[352px]  text-center text-[#fff] lg:text-[40px] font-bold    '>
                 What We Hope To Achieve        </h2>

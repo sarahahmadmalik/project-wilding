@@ -10,7 +10,7 @@ const index = () => {
                 <div className='  h-full'>
                     <Image width={603} height={100} src={'/women.svg'} />
                 </div>
-                <div className='flex  flex-col h-[669px]  bg-[#000]  gap-y-3 w-full lg:w-[50%] justify-center py-4 px-8 justify-center '>
+                <div className='flex  flex-col h-[669px]  bg-[#000]  gap-y-3 w-full lg:w-[50%]  py-4 px-8 justify-center '>
                     <h1 className='Open  leading-[54.87px] text-[24px] lg:text-[40px] font-bold max-w-ful md:max-w-[598px]'>WHAT’S INCLUDED IN YOUR MEMBERSHIP</h1>
                     <h3 className='Carme leading-[24.19px] mt-1 text-[12px] lg:text-[16px] font-normal  max-w-ful md:max-w-[526px] text-center md:text-left'>
                         Our membership does the obvious first, it sponsors your desired sqft of land per month, but then you also get some perks as a thank you.
@@ -37,7 +37,7 @@ const index = () => {
                     </div>
 
 
-                    <a href='/' className='bg-[#1A401F] mt-6 flex justify-center max-w-[290px] items-center rounded-[66px]  py-3 px-8'>
+                    <a href='/' className='bg-[#1A401F] mt-8 flex justify-center max-w-[290px] items-center rounded-[66px]  py-3 px-8'>
                         Join us on our mission <Image className='mt-2 ml-2' src={'/arrow.svg'} width={15} height={15} />
                     </a>
                 </div>

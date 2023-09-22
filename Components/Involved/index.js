@@ -6,7 +6,7 @@ import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im';
 const index = () => {
     return (
         <div className='bg-[white]'>
-            <div className=' flex flex-col justify-center md:justify-between flex-wrap gap-y-6  gap-x-3 items-center px-6 max-w-[1300px] mx-auto py-[80px]'>
+            <div className=' flex flex-col justify-center md:justify-between flex-wrap gap-y-6  gap-x-3 items-center px-6 max-w-[1300px] mx-auto py-[60px]'>
                 <h2 className='Open text-[24px] max-w-[352px]  text-center text-[#000] lg:text-[40px] font-bold    '>
                     Get Involved        </h2>
                 <figure class="max-w-screen-md mx-auto text-center">
@@ -19,7 +19,7 @@ const index = () => {
                     </blockquote>
 
                 </figure>
-                <button className='bg-[#1A401F] mt-6 flex self-center justify-center items-center rounded-[66px]  py-3 px-8'>
+                <button className='bg-[#1A401F]  flex self-center justify-center items-center rounded-[66px]  py-3 px-8'>
                     Join the community today <Image className='mt-2 ml-2' src={'/arrow.svg'} width={15} height={15} />
                 </button>
             </div>
