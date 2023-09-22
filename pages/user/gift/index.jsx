@@ -5,7 +5,7 @@ import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 import DashboardLayout from '@/layout/DashboardLayout';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-
+import CustomInput from '@/Components/CustomInput'
 function Index() {
   const [paymentVisible, setPaymentVisible] = useState(false);
   const [monthlyContribution, setMonthlyContribution] = useState(5);
@@ -16,6 +16,7 @@ function Index() {
   const [formData, setFormData] = useState({
     firstName: '',
     email: '',
+    recipientEmail: '',
   });
 
   const router = useRouter();
@@ -46,7 +47,14 @@ function Index() {
   const handleAgreeToTermsChange = (event) => {
     setAgreeToTerms(event.target.checked);
   };
+  function calculateSponsorship(monthlyContribution) {
+    const sponsorshipRate = 0.99; // £0.99 per square foot
+    return Math.floor(monthlyContribution / sponsorshipRate);
+  }
 
+
+
+  const sponsoredSquareFeet = calculateSponsorship(monthlyContribution);  
   const handleConfirmChange = () => {
     // Simulate loading
     setLoading(true);
@@ -67,12 +75,19 @@ function Index() {
       <div className="w-full fontFamily h-full py-[1rem] px-[1rem] flex justify-center items-center">
         <div className="w-[550px]">
           <div className="my-2">
-            <h1 className="font-[700] text-center text-[32px] text-black my-5">
-              Gift a 1 year Project Wilding membership!
+          <h1 className="font-[700] text-center text-[32px] text-black my-5">
+              Gift a 1 year Project Wilding membership to a Friend!
             </h1>
 
             {!confirmationVisible && (
               <>
+                <CustomInput
+              label="Recipient's Email"
+              type="email"
+              value={formData.recipientEmail}
+              onChange={(e) => setFormData({ ...formData, recipientEmail: e.target.value })}
+            />
+           
                  <label htmlFor="currency" className="block text-black text-[20px] mb-2">
                   Choose payment currency:
                 </label>
@@ -119,7 +134,7 @@ function Index() {
                     />
                   </button>
                   <span className="flex flex-col items-center font-[600] text-[20px] text-black">
-                    £{monthlyContribution}
+                    £{monthlyContribution} <p className="text-[14px]">sponsers {sponsoredSquareFeet} square feet of land.</p>
                   </span>
                   <button
                     onClick={handleIncrement}

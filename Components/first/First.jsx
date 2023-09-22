@@ -13,7 +13,7 @@ const First = () => {
             title: 'Investigation of red kite poisoning has identified a suspect',
             user: 'user1.avif',
             username: 'Adriana Brossmannova',
-            userdata: 'Conservation Biologist @ Mossy Earth',
+            userdata: 'Conservation Biologist @ Project Wilding',
             desc: `Wildlife poisoning is classified as a crime in Spain, but continues to be the leading cause of death of Red kites in this country. Thanks to the great effort of our on-the-ground partner AMUS and Spanish authorities, the 1,5 year investigation of the poisoning of a Red kite released as part of the LIFE Eurokite project is coming to an end.
             The Red kite was GPS tagged and released in the spring of 2021 after having recovered at the AMUS wildlife from an injury. As such, it became part of the 500 Red kites that have been equipped with a GPS in Europe in the last 2 years. In Spain the species is classified as Endangered and 100 juvenile nestlings are being tagged and released during the project, an activity supported by Mossy Earth. With the increasing availability of GPS devices for species tagging, this method is becoming increasingly important in understanding the behaviour and threats to different species to design effective conservation strategies.
             
@@ -33,7 +33,7 @@ const First = () => {
             title: 'Investigation of red kite poisoning has identified a suspect',
             user: 'user1.avif',
             username: 'Adriana Brossmannova',
-            userdata: 'Conservation Biologist @ Mossy Earth',
+            userdata: 'Conservation Biologist @ Project Wilding',
             desc: `Wildlife poisoning is classified as a crime in Spain, but continues to be the leading cause of death of Red kites in this country. Thanks to the great effort of our on-the-ground partner AMUS and Spanish authorities, the 1,5 year investigation of the poisoning of a Red kite released as part of the LIFE Eurokite project is coming to an end.
             The Red kite was GPS tagged and released in the spring of 2021 after having recovered at the AMUS wildlife from an injury. As such, it became part of the 500 Red kites that have been equipped with a GPS in Europe in the last 2 years. In Spain the species is classified as Endangered and 100 juvenile nestlings are being tagged and released during the project, an activity supported by Mossy Earth. With the increasing availability of GPS devices for species tagging, this method is becoming increasingly important in understanding the behaviour and threats to different species to design effective conservation strategies.
             
@@ -53,7 +53,7 @@ const First = () => {
             title: 'Investigation of red kite poisoning has identified a suspect',
             user: 'user1.avif',
             username: 'Adriana Brossmannova',
-            userdata: 'Conservation Biologist @ Mossy Earth',
+            userdata: 'Conservation Biologist @ Project Wilding',
             desc: `Wildlife poisoning is classified as a crime in Spain, but continues to be the leading cause of death of Red kites in this country. Thanks to the great effort of our on-the-ground partner AMUS and Spanish authorities, the 1,5 year investigation of the poisoning of a Red kite released as part of the LIFE Eurokite project is coming to an end.
             The Red kite was GPS tagged and released in the spring of 2021 after having recovered at the AMUS wildlife from an injury. As such, it became part of the 500 Red kites that have been equipped with a GPS in Europe in the last 2 years. In Spain the species is classified as Endangered and 100 juvenile nestlings are being tagged and released during the project, an activity supported by Mossy Earth. With the increasing availability of GPS devices for species tagging, this method is becoming increasingly important in understanding the behaviour and threats to different species to design effective conservation strategies.
             
@@ -110,7 +110,7 @@ const First = () => {
       }
     }  
     return (
-        <div className='md:w-[83%] w-full px-[1.7rem] fontFamily md:mx-auto py-20'>
+        <div className='md:w-[87%] w-full px-[1.7rem] fontFamily md:mx-auto py-4'>
             <h1 className='text-[32px] text-black font-[900] pb-5'>
                 Hello, <br />
                 Matt!
@@ -129,7 +129,7 @@ const First = () => {
                                         {item.title}
                                     </p>
                                     <div className='flex items-start gap-3'>
-                                        <img src={item.user} alt="" className='rounded-full w-[50px] '   />
+                                        <img src="/images/user.avif" alt="" className='rounded-full w-[50px] '   />
                                         <div className='flex flex-col gap-2'>
                                             <p className='text-[18px] font-[500]'>{item.username}</p>
                                             <p>{item.userdata}</p>
