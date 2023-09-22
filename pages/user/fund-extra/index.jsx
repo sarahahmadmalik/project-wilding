@@ -36,7 +36,7 @@ const Third = () => {
     ]
     return (
         <DashboardLayout>
-        <div className="fontFamily px-[2.3rem] py-[1rem]">
+        <div className="fontFamily">
             <div className='flex flex-col justify-center items-center gap-4'>
                 <h1 className='text-[24px] font-[700] text-[#2F3542]  '>
                     Fund extra campaigns 💚
@@ -48,7 +48,7 @@ const Third = () => {
                         or click here for a page to share with others to contribute to your impact
                     </a>
                 </p>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-16 my-5'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-y-16 space-x-3 my-5'>
                     {
                         data.map((item, i) => (
                             <div key={i} className='flex text-black flex-col bg-white justify-start items-start gap-4 text-left w-[500px] rounded-lg shadow '>

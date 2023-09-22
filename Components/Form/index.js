@@ -40,11 +40,11 @@ const index = () => {
                     <h1 className='Open text-[24px] lg:text-[40px] font-bold   mb-[20px] '>Get in touch</h1>
 
                     <form>
-                        <div className='flex gap-x-2 justify-between items-center'>
+                        <div className='flex gap-x-2 justify-between items-center '>
                             <div class="relative bg-[#fff] rounded-[5px] text-[#fff] mb-6" data-te-input-wrapper-init>
                                 <input
                                     type="text"
-                                    class="peer placeholder-[#000] block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear "
+                                    class="peer placeholder-[#000] block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-black outline-none transition-all duration-200 ease-linear "
                                     id="exampleInput7"
                                     placeholder="Name" />
 
@@ -53,7 +53,7 @@ const index = () => {
                             <div class="relative bg-[#fff] rounded-[5px] text-[#fff] mb-6" data-te-input-wrapper-init>
                                 <input
                                     type="email"
-                                    class="peer placeholder-[#000] block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear "
+                                    class="peer placeholder-[#000] block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] text-black leading-[1.6] outline-none transition-all duration-200 ease-linear "
                                     id="exampleInput8"
                                     placeholder="Email address" />
 
@@ -61,7 +61,7 @@ const index = () => {
                         </div>
                         <div class="relative bg-[#fff] rounded-[5px] text-[#fff] mb-6" data-te-input-wrapper-init>
                             <textarea
-                                class=" peer placeholder-[#000] block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear  "
+                                class=" peer placeholder-[#000] block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] text-black leading-[1.6] outline-none transition-all duration-200 ease-linear  "
                                 id="exampleFormControlTextarea13"
                                 rows="3"
                                 placeholder="Message"></textarea>
@@ -81,7 +81,7 @@ const index = () => {
                 </div>
 
 
-                <div className='w-full md:w-[50%]'>
+                <div className='w-full md:w-[50%] my-8 sm:my-0'>
                     <h1 className='Open text-[24px] lg:text-[40px] font-bold  text-[#000] mb-[20px] '>Our FAQs</h1>
 
                     <Collapse expandIconPosition='end' items={items} className='w-full' bordered={false} defaultActiveKey={['1']} />

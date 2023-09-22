@@ -21,35 +21,53 @@ const Sidebar = ({ role }) => {
   }, [router, current]);
 
   return (
-    <Sider
-      style={{ paddingTop: "2rem", background: "#FFFFFF" }}
-      className="hidden md:block"
-    >
-      <div className="flex items-center justify-center">
-        <div>
-          <Image src={"/logo.png"} width={100} height={100} style={{cursor: 'pointer'}} onClick={() => router.push('/')}/>
-        </div>
-      </div>
-      <div
+  
+      <Sider
+        width={200}
         style={{
-          marginTop: "2rem",
-          listStyle: "none",
-          padding: 0,
+          paddingTop: "2rem",
+          background: "#FFFFFF",
+          position: "fixed",
+          left: 0,
+          top: 0,
+          bottom: 0,
+          zIndex: 1, // Adjust the z-index as needed
         }}
+        collapsed={collapsed}
       >
-         {routes.map((route) => {
-          if (route.roles.includes(role)) {
-            return (
-              <CustomMenuItem
-                key={route.path}
-                route={route}
-                current={current}
-              />
-            );
-          }
-        })}
-      </div>
-    </Sider>
+        <div className="flex items-center justify-center">
+          <div>
+            <Image
+              src={"/logo.png"}
+              width={130}
+              height={130}
+              style={{ cursor: "pointer" }}
+              onClick={() => router.push("/")}
+            />
+          </div>
+        </div>
+        <div
+          style={{
+            marginTop: "2rem",
+            listStyle: "none",
+            padding: 0,
+          }}
+        >
+          {routes.map((route) => {
+            if (route.roles.includes(role)) {
+              return (
+                <CustomMenuItem
+                  key={route.path}
+                  route={route}
+                  current={current}
+                />
+              );
+            }
+          })}
+        </div>
+      </Sider>
+    
+  
   );
 };
 

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 const index = () => {
     const router = useRouter();
     return (
-        <div className='flex flex-col justify-start py-20 items-center gap-24 h-screen w-full'>
+        <div className='flex bg-black flex-col justify-start py-20 items-center gap-24 h-full w-full'>
             <img src="/logo.png" alt="" className="w-[200px]" />
             <div className='flex flex-col justify-center items-center'>
                 <h1 className='text-[32px] font-[700]'>Hello,</h1>
@@ -11,12 +11,12 @@ const index = () => {
                     Login to your account </p>
                 <form class="w-full">
                     <div class="floating-input mb-5 relative">
-                        <input type="email" id="email" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-[340px]  px-3 h-12" placeholder="name@example.com" autocomplete="off" />
-                        <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">Email address</label>
+                        <input type="email" id="email" class="border  focus:outline-none rounded-md text-black focus:border-gray-500 focus:shadow-sm w-[340px]  px-3 h-12" placeholder="name@example.com" autocomplete="off" />
+                        <label for="email" class="absolute top-0 left-0 px-3 py-5 text-black h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">Email address</label>
                     </div>
                     <div class="floating-input mb-5  relative">
-                        <input type="password" id="password" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-12" placeholder="password" autocomplete="off" />
-                        <label for="password" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">Password</label>
+                        <input type="password" id="password" class="border text-black  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-12" placeholder="password" autocomplete="off" />
+                        <label for="password" class="absolute top-0 left-0 px-3 py-5 text-black h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">Password</label>
                     </div>
                     <button type="button"  onClick={() => router.push("/user/")} class="w-full bg-[#1a401f] hover:bg-[#0e2612] ease-in duration-200 transition-all text-white py-2 text-[18px] rounded-md ">Login</button>
                 </form>

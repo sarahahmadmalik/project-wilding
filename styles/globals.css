@@ -112,9 +112,9 @@ a {
 
 .ant-layout-sider {
   box-shadow: 4px 11px 12px rgba(0, 0, 0, 0.12) !important;
-  width: 130px !important;
-  max-width: 130px !important;
-  min-width: 130px !important;
+  width: 180px !important;
+  max-width: 180px !important;
+  min-width: 180px !important;
   background: #212742 !important;
 } 
 
@@ -123,6 +123,10 @@ a {
   width: 90vw;
   max-width: 700px;
   display: grid;
+}
+
+.icon:hover {
+  color: #61B46C; /* Change this to your desired hover color */
 }
 
 .main-faq {
@@ -186,9 +190,18 @@ a {
 }
 
 
+#underlineText {
+  text-decoration: underline ;
+  text-underline-offset: 4px !important;
+}
+
 
 .slide {
   margin-right: 10px !important /* Add margin between images */
+}
+
+.ant-btn{
+  width: 100% !important;
 }
 
 /* Customize the appearance of arrows */

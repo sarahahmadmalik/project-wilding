@@ -4,17 +4,7 @@ const First = () => {
     // const [showFullUpdate, setShowFullUpdate] = useState(false);
     const [showComments, setShowComments] = useState(false);
 
-   
-    const toggleComments = () => {
-        setShowComments(!showComments);
-    };
 
-
-    const comments = [
-        'Comment 1',
-        'Comment 2',
-        'Comment 3',
-    ];
     const data = [
         {
             id: 1,
@@ -77,8 +67,50 @@ const First = () => {
 
         },
     ]
+
+    const [newComment, setNewComment] = useState('');
+    const [comments, setComments] = useState([
+      {
+        id: 1,
+        userImage: '/user1.jpg',
+        userName: 'John Doe',
+        datePosted: 'September 22, 2023',
+        text: 'This is such a good project. Hoping this will catch on in other parts of the word as well. Slowing down rivers and streams keeps water available longer during the season for both wildlife and farmers. Keep up the good work.',
+      },
+      {
+        id: 2,
+        userImage: '/user2.jpg',
+        userName: 'Jane Smith',
+        datePosted: 'September 23, 2023',
+        text: 'I love the community involvement on this project, so important',
+      },
+      // Add more comments as needed
+    ]);
+  
+    const toggleComments = () => {
+      setShowComments(!showComments);
+    };
+  
+    const handleNewCommentChange = (e) => {
+      setNewComment(e.target.value);
+    };
+  
+    const handlePostComment = () => {
+      if (newComment.trim() !== '') {
+        const newCommentObj = {
+          id: comments.length + 1,
+          userImage: '/user3.jpg', // Set the user's image here
+          userName: 'Your Name', // Set the user's name here
+          datePosted: new Date().toLocaleDateString(),
+          text: newComment,
+        };
+  
+        setComments([...comments, newCommentObj]);
+        setNewComment('');
+      }
+    }  
     return (
-        <div className='md:w-1/2 w-full px-[1.7rem] fontFamily md:mx-auto py-20'>
+        <div className='md:w-[83%] w-full px-[1.7rem] fontFamily md:mx-auto py-20'>
             <h1 className='text-[32px] text-black font-[900] pb-5'>
                 Hello, <br />
                 Matt!
@@ -117,19 +149,56 @@ const First = () => {
 
 
 
-                                {showComments && (
-                                    <div className="my-10 p-5">
-                                        <h2 className="text-lg font-semibold">Comments:</h2>
-                                        {comments.map((comment, index) => (
-                                            <div key={index} className="mt-10">
-                                                {comment}
-                                            </div>
-                                        ))}
-                                    </div>
-                                )}
+                                {showComments &&
+          comments.map((comment) => (
+            <div
+              key={comment.id}
+              className="mt-6 bg-gray-100 rounded-lg p-4 flex mx-8"
+            >
+              <img
+                src="/images/user.avif"
+                alt="User Profile"
+                className="rounded-full w-[50px] h-[50px] object-cover mr-4"
+              />
+              <div className="flex-1">
+                <div className="flex items-center justify-between">
+                  <p className="text-[15px] font-semibold">{comment.userName}</p>
+                  <p className=" text-[12px] text-gray-500">{comment.datePosted}</p>
+                </div>
+                <p className="mt-2">{comment.text}</p>
+                <button
+                  className="mt-2 text-blue-500 cursor-pointer"
+                  onClick={() => {
+                    // Handle reply button click here
+                  }}
+                >
+                  Reply
+                </button>
+              </div>
+              
+            </div>
+            
+          ))}
 
+          {showComments && (
+              <div className="mt-4 p-5 ">
+              <textarea
+                className="w-full h-20 px-4 py-2 rounded-md border border-gray-300 focus:outline-none"
+                placeholder="Write your comment..."
+                value={newComment}
+                onChange={handleNewCommentChange}
+              ></textarea>
+              <button
+                className="mt-2 text-white bg-blue-500 rounded-md px-4 py-2 hover:bg-blue-600 focus:outline-none"
+                onClick={handlePostComment}
+              >
+                Post Comment
+              </button>
+            </div>
+          )}
+            
                                 <div
-                                    className={`flex justify-center space-x-2`}
+                                    className={`flex justify-center space-x-2 my-8`}
                                 >
                                     <button
                                         className="text-blue-500 cursor-pointer"
