@@ -27,7 +27,7 @@ function Index() {
 
   return (
     <DashboardLayout>
-      <div className="w-full fontFamily h-full py-[1rem] px-[1rem] flex justify-center items-center">
+      <div className="w-full fontFamily h-full py-[1rem] md:px-[1rem] flex justify-center items-center">
         <div className="w-[600px]">
           <div className="my-2">
           <h1 className="font-[700] text-[22px] text-[#2F3542] text-center mb-5">Fund extra impact for Rewilding a Former Mining Site!</h1>

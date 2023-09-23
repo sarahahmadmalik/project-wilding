@@ -89,7 +89,7 @@ const handleCancelConfirm = (check1, check2) => {
           </Link>
         </div>
 
-        <div className="flex justify-center mt-7 mb-3 w-full space-x-5">
+        <div className="flex flex-col sm:flex-row items-center sm:items-left sm:justify-center mt-7 mb-3 w-full space-y-3 sm:space-y-0 sm:space-x-5">
         <div  className="flex items-center underline  text-[#255143]  transition underline-offset-4  hover:no-underline">
             <PauseCircleOutlined size={18} style={{ color: "#255143" }} />
             <p onClick={showModal}

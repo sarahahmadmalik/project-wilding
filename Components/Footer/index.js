@@ -190,7 +190,7 @@ const index = () => {
                 <div className='w-full  gradient h-[2px] my-5'></div>
                 <div class=" p-6 flex justify-between items-center text-center ">
                     <span>© Project Wilding CIC 2023 | All Rights reserved</span>
-                    <Link href=" https://www.reforesthosting.com" className="text-white">This website is powered entirely by renewable energy</Link>
+                    <Link href=" www.reforesthosting.com" className="text-white">This website is powered entirely by renewable energy</Link>
                 </div>
             </footer>
         </div>

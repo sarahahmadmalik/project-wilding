@@ -110,7 +110,7 @@ const First = () => {
       }
     }  
     return (
-        <div className='md:w-[87%] w-full px-[1.7rem] fontFamily md:mx-auto py-4'>
+        <div className='md:w-[87%] w-full md:px-[1.7rem] fontFamily mx-0 md:mx-auto py-4'>
             <h1 className='text-[32px] text-black font-[900] pb-5'>
                 Hello, <br />
                 Matt!

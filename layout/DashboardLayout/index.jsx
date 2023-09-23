@@ -1,13 +1,13 @@
-import Sidebar from "./Sidebar";
-import { useRouter } from "next/router";
-import { useState } from "react";
-import { UserOutlined } from "@ant-design/icons";
-import Link from "next/link";
-import { Avatar, Button, Dropdown, Input, Layout, Spin, Drawer, Menu } from "antd";
-import { SearchOutlined, BellOutlined, MenuOutlined } from "@ant-design/icons";
-const { Header, Content } = Layout;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faUser, faDollarSign, faComments, faCog, faGift, faStar } from '@fortawesome/free-solid-svg-icons';
+import Link from "next/link";
+import React, { useState } from 'react';
+import { UserOutlined } from "@ant-design/icons";
+import { Avatar, Button, Dropdown, Input, Layout, Spin, Drawer, Menu, Image } from "antd";
+import { SearchOutlined, BellOutlined, MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import { useRouter } from "next/router";
+import Sidebar from "./Sidebar";
+const { Header, Content } = Layout;
 
 const Index = ({ children }) => {
   const router = useRouter();
@@ -68,25 +68,29 @@ const Index = ({ children }) => {
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
-         <Sidebar role={"admin"} />
-         <Layout className="site-layout  "  >
-
-      <Header className="header  md:hidden" >
-        <div className="menu-icon flex justify-end items-center  text-[45px]" >
-        <button onClick={showDrawer}><MenuOutlined size={30} style={{ color: "white", fontSize: "30px" }}/></button>?
-        </div>
-        {/* Add other header contents here */}
-     
-   
-      
+      <Sidebar role={"admin"} />
       <Drawer
-        title="Menu"
-        placement="left"
+        id='drawer'
+        title={null} // Set the title to null to hide the header
+        placement="top"
         closable={false}
+        style={{ background: "#212742 !important" }}
         onClose={onCloseDrawer}
         visible={drawerVisible}
       >
-        <Menu onClick={handleMenuClick} selectedKeys={[selectedMenuItem]} mode="vertical">
+        <Button
+          icon={<CloseOutlined style={{ color: "white", fontSize: "20px" }} />}
+          shape="circle"
+          size="small"
+          onClick={onCloseDrawer}
+          className="close-button border-0 flex justify-end"
+        />
+        <Menu
+          onClick={handleMenuClick}
+          style={{ background: "#212742 !important" }}
+          selectedKeys={[selectedMenuItem]}
+          mode="vertical"
+        >
           {routes.map((route) => (
             <Menu.Item key={route.title} icon={route.icon}>
               <Link href={route.path}>{route.title}</Link>
@@ -94,11 +98,28 @@ const Index = ({ children }) => {
           ))}
         </Menu>
       </Drawer>
-      </Header>
-        <Content className="custom-content" style={{ margin: "16px"}}>
+      <Layout className="site-layout">
+        <Header className="header md:hidden " style={{ paddingLeft: "10px", paddingRight: "10px" }}>
+          <div className="menu-icon flex justify-between items-center text-[45px]">
+            <div>
+              <Image
+                src={"/logo.png"}
+                width={150}
+                height={40}
+                className="mt-2"
+                style={{ cursor: "pointer" }}
+                onClick={() => router.push("/")}
+              />
+            </div>
+            <button onClick={showDrawer}>
+              <MenuOutlined size={30} style={{ color: "white", fontSize: "30px" }} />
+            </button>
+          </div>
+          {/* Add other header contents here */}
+        </Header>
+        <Content className="custom-content" style={{ margin: "16px" }}>
           {children}
         </Content>
-       
       </Layout>
     </Layout>
   );

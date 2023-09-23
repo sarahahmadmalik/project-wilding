@@ -48,10 +48,10 @@ const Third = () => {
                         or click here for a page to share with others to contribute to your impact
                     </a>
                 </p>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-y-16 space-x-3 my-5'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-y-16 md:space-x-3 my-5'>
                     {
                         data.map((item, i) => (
-                            <div key={i} className='flex text-black flex-col bg-white justify-start items-start gap-4 text-left w-[500px] rounded-lg shadow '>
+                            <div key={i} className='flex text-black flex-col bg-white justify-start items-start gap-4 text-left w-full md:w-[500px] rounded-lg shadow '>
                                 <img src={item.img} alt="" className='md:w-[600px] md:h-[300px] object-cover rounded-t-lg' />
                                  <div className='p-5 flex flex-col gap-4 bg-white overflow-hidden rounded-lg'>
 

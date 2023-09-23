@@ -118,6 +118,18 @@ a {
   background: #212742 !important;
 } 
 
+#drawer{
+  background: #212742 !important
+}
+
+.ant-menu{
+  background: #212742 !important;
+  color: white !important;
+  font-size: 17px !important;
+}
+
+
+
 /* faq */
 .container-faq {
   width: 90vw;

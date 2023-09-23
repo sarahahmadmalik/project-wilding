@@ -86,7 +86,7 @@ function Index() {
 
   return (
     <DashboardLayout>
-      <div className="w-full fontFamily h-full px-[2.3rem] py-[1rem]">
+      <div className="w-full fontFamily h-full sm:px-[2.3rem] py-[1rem]">
         <div className="flex w-full justify-between items-center">
           <h1 className="font-[800] text-[26px] text-black">
           Community
@@ -103,7 +103,7 @@ function Index() {
                 People you've signed up: <p className="font-[500]">0</p>
                 </div>
 
-                <div className="rounded-md flex bg-[#F7E281]  my-5">
+                <div className="rounded-md flex flex-wrap bg-[#F7E281]  my-5">
                     <div className="rounded-md bg-white flex items-center font-[400] text-[17px] text-black px-2 py-2">
                     MATBB2YZA3
                     </div>

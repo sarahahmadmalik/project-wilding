@@ -55,10 +55,10 @@ function Index() {
 
   return (
     <DashboardLayout>
-      <div className="w-full fontFamily h-full px-[2.3rem] py-[1rem]">
+      <div className="w-full fontFamily h-full md:px-[2.3rem] py-[1rem]">
         <div className="w-full flex flex-col justify-center items-center">
-            <div className="rounded-lg bg-[#F4F8FA] py-3 px-4 flex items-start justify-between w-[70%]">
-            <div className="grid grid-cols-1 md:grid-cols-2 self-center gap-4 text-center h-full w-60%">
+            <div className="rounded-lg bg-[#F4F8FA] py-3 px-4 flex flex-col md:flex-row md:items-start md:justify-between w-full md:w-[70%]">
+            <div className="grid grid-cols-1 md:grid-cols-2 self-center gap-4 text-center h-full w-full md:w-60%">
   <div className="rounded-md bg-white px-4 py-4 text-[18px] h-[70px]  font-[500] text-[#2F3542]">
     1 month of action!
   </div>
@@ -73,7 +73,7 @@ function Index() {
   </div>
 </div>
 
-<div className="relative w-[310px] rounded-lg overflow-hidden h-[180px] ">
+<div className="relative w-full md:w-[310px] rounded-lg overflow-hidden h-[180px] ">
               <Image
                 src="/images/impact.png"
                 fill
@@ -90,7 +90,7 @@ function Index() {
 
 
             </div>
-            <div className="px-[2.4rem] mx-[1.2rem] py-4 my-4 w-full h-full border-l border-grey-400">
+            <div className="md:px-[2.4rem] mx-[1.2rem] py-4 my-4 w-full h-full border-l border-grey-400">
               <p className="bg-[#F4D54B] rounded-md py-1 px-2 mb-8 text-black text-[18px] font-[600] inline-flex ">September 2023</p>
             {accordion.map((item) => (
             <Accordion key={item.id} title={item.title} content={item.para} imageSrc={item.img} />
