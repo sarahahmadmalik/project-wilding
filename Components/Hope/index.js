@@ -60,9 +60,9 @@ const index = () => {
                     >
                         01
                     </div> */}
-                        <div class="px-4 pb-2 pt-6 bg-[#FFFFFF] ">
+                        <div class="px-4 pb-2 pt-4 bg-[#FFFFFF] ">
                             <h5
-                                class="mb-2 text-xl mt-3 font-medium leading-tight text-[#1B2430]">
+                                class="mb-2 text-xl  font-medium leading-tight text-[#1B2430]">
                                 REGENERATING LAND FOR WILDLIFE                       </h5>
                             <p class="mb-4 text-base text-[#1B2430]">
                                 Embrace the journey of regenerating land for wildlife. Regenerating land for wildlife means carefully restoring natural habitats. As we embrace vibrant biodiversity we can bring the balance of nature back to spaces it&apos;s missing. We&apos;re on a mission to make sure green space counts.
@@ -94,9 +94,9 @@ const index = () => {
                     >
                         01
                     </div> */}
-                        <div class="px-4 pb-2 pt-6 bg-[#FFFFFF] ">
+                        <div class="px-4 pb-2 pt-4 bg-[#FFFFFF] ">
                             <h5
-                                class="mb-2 text-xl mt-3 font-medium leading-tight text-[#1B2430]">
+                                class="mb-2 text-xl  font-medium leading-tight text-[#1B2430]">
                                 EDUCATING AND INSPIRING                        </h5>
                             <p class="mb-4 text-base text-[#1B2430]">
                                 Igniting a passion for nature and empowering people to take action towards reversing biodiversity loss is a part of instilling a greater sense of balance back to nature. By creating a vibrant community of nature-connected humans, we aim to educate, inspire and empower people to make a difference.

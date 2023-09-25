@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
+
 const index = () => {
     return (
         <div className='bg-[#---]'>
             <footer
-                class=" text-center px-6 max-w-[1300px] mx-auto py-[50px] text-[#fff]  lg:text-left">
+                class=" text-center text-white px-6 max-w-[1300px] mx-auto py-[50px] text-[#fff]  lg:text-left">
 
-
-                <div class="mx-6 py-10 text-center md:text-left">
+<div class="mx-6 py-10 text-center md:text-left">
                     <div class="grid-1 grid Open gap-8 md:grid-cols-2 lg:grid-cols-4">
                         <div class="">
                             <Image src={'logo.svg'} width={200} height={200} className='mx-auto md:mx-0' />
@@ -19,53 +19,45 @@ const index = () => {
                             <p>Project Wildling CIC is a registered community interest company in England & Wales – Company number XXXXXX.
                             </p>
                         </div>
-                        <div class="">
+                        <div class="text-white">
                             <h6
                                 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                                 Useful links
                             </h6>
                             <p class="mb-4">
-                                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Login/Register</a
-                                >
+                                <a href="#!" class="text-white"
+                                >Login/Register</a>
                             </p>
                             <p class="mb-4">
-                                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Our Mission</a
-                                >
+                                <a href="#!" class="text-white"
+                                >Our Mission</a>
                             </p>
                             <p class="mb-4">
-                                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Shop</a
-                                >
+                                <a href="#!" class="text-white"
+                                >Shop</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Blog</a
-                                >
+                                <a href="#!" class="text-white"
+                                >Blog</a>
                             </p>
                         </div>
                         <div class="">
 
                             <p class="mb-4">
-                                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Contact Us</a
-                                >
+                                <a href="#!" class="text-white"
+                                >Contact Us</a >
                             </p>
                             <p class="mb-4">
-                                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Terms&Condition</a
-                                >
+                                <a href="#!" class="text-white"
+                                >Terms&Condition</a>
                             </p>
                             <p class="mb-4">
-                                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Privacy Policy</a
-                                >
+                                <a href="#!" class="text-white"
+                                >Privacy Policy</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Refund Policy</a
-                                >
+                                <a href="#!" class="text-white"
+                                >Refund Policy</a>
                             </p>
                         </div>
                         <div className='max-w-[390px] w-full'>
@@ -192,6 +184,7 @@ const index = () => {
                     <span>© Project Wilding CIC 2023 | All Rights reserved</span>
                     <Link href=" www.reforesthosting.com" className="text-white">This website is powered entirely by renewable energy</Link>
                 </div>
+
             </footer>
         </div>
     )

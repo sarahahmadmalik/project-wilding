@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { IoMdArrowDropdown } from "react-icons/io"
 const index = () => {
     const [count, setCount] = useState(5);
+    const [yearlyCount, setYearlyCount] = useState(60);
 
     const handleIncrement = () => {
         setCount(count + 5);
@@ -49,13 +50,13 @@ const index = () => {
         setSelectedOption(option);
     };
     return (
-        <div className='flex flex-col justify-start py-20 items-center   w-full '>
+        <div className='flex flex-col bg-black h-full xl:h-[100vh] justify-start py-20 items-center   w-full '>
             <img src="/logo.png" alt="" className="w-[200px]" />
-            <div className='flex flex-col justify-center items-center pt-20'>
+            <div className='flex flex-col justify-center items-center pt-10'>
                 <h1 className='text-[32px] font-[700] text-center'>Sign up for membership</h1>
 
             </div>
-            <div className="relative pt-10" ref={dropdownRef} >
+            <div className="relative pt-5" ref={dropdownRef} >
                 <p className='pb-3'>Payment Currency</p>
                 <button
                     onClick={toggleDropdown}
@@ -95,8 +96,8 @@ const index = () => {
                         -
                     </button>
                     <div className="flex flex-col justify-center items-center">
-                        <p className="font-[700] text-[24px]">£{count}</p>
-                        <p className="text-[16px]">/month</p>
+                        <p className="font-[700] text-[24px]"> {selectedOption === "monthly" ? `£${count}` : `£${yearlyCount}`}</p>
+                        <p className="text-[16px]">{selectedOption === "monthly" ? '/month' : '/year'}</p>
                     </div>
                     <button
                         className="text-[24px] font-[700] px-10 md:px-20 py-2 bg-[#1a401f] rounded-md"
@@ -110,12 +111,10 @@ const index = () => {
             <div className='flex flex-col justify-center items-center pt-10'>
                 <form class="w-[300px] md:w-[600px]">
                     <div class="mb-3 relative">
-                        <input type="email" id="email" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full  px-3 h-12" placeholder="First Name" autocomplete="off" />
-                        <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">First Name</label>
+                        <input type="email" id="email" placeholder="Enter Email" class="border  text-black focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full  px-3 h-12" autocomplete="off" />
                     </div>
                     <div class=" mb-3 relative">
-                        <input type="password" id="password" class="border  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-12" placeholder="Enter Email" autocomplete="off" />
-                        <label for="password" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out ">Email</label>
+                        <input type="password" id="password" placeholder="Enter Password" class="border text-black  focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-12"  autocomplete="off" />
                     </div>
                 </form>
 
@@ -124,7 +123,7 @@ const index = () => {
             <div className="flex flex-col items-center pt-10">
 
                 <div className="flex flex-col md:flex-row gap-4">
-                    <div className={`flex flex-col items-center gap-2 border w-[300px] py-5 text-center rounded ${selectedOption === 'monthly' ? 'border-green-500' : 'border-gray-300'}`}>
+                    <div className={`cursor-pointer flex flex-col items-center gap-2 border w-[300px] py-5 text-center rounded ${selectedOption === 'monthly' ? 'border-green-500' : 'border-gray-300'}`}>
                         <input
                             type="radio"
                             id="monthly"
@@ -137,7 +136,7 @@ const index = () => {
                             £{count}/month
                         </label>
                     </div>
-                    <div className={`flex flex-col items-center gap-2 border w-[300px] py-5 text-center rounded ${selectedOption === 'yearly' ? 'border-green-500' : 'border-gray-300'}`}>
+                    <div className={`flex cursor-pointer flex-col items-center gap-2 border w-[300px] py-5 text-center rounded ${selectedOption === 'yearly' ? 'border-green-500' : 'border-gray-300'}`}>
                         <input
                             type="radio"
                             id="yearly"
@@ -146,7 +145,7 @@ const index = () => {
                             checked={selectedOption === 'yearly'}
                             onChange={() => handleOptionChange('yearly')}
                         />
-                        <label htmlFor="yearly">Pay Yearly <br /> £{count}/year</label>
+                        <label htmlFor="yearly">Pay Yearly <br /> £{yearlyCount}/year</label>
                     </div>
                 </div>
             </div>
