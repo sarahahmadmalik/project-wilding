@@ -5,12 +5,12 @@ import { BiSolidMessageAlt } from "react-icons/bi";
 const index = () => {
   return (
     <div className="bg-[white]">
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4   px-6 max-w-[1300px] mx-auto py-[50px] md:py-[100px]">
-        <div class="max-w-[380px]  relative bg-white  rounded-[10px] shadow max-h-fit">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4   px-6 max-w-[1300px] mx-auto py-[50px] md:py-[40px]]">
+        <div class="max-w-[380px]  relative bg-white  rounded-[10px] shadow  lg:h-[600px]">
           <a href="#">
             <img class="rounded-t-lg" src="/blog.svg" alt="" />
 
-            <button className="bg-[#1A401F] mt-6 flex justify-center max-w-[126px] items-center rounded-[66px] absolute top-[33%] left-[5%] z-50  p-2">
+            <button className="bg-[#1A401F] mt-0 md:mt-6 flex justify-center max-w-[126px] items-center rounded-[66px] absolute top-[30%] sm:top-[33%] left-[5%] z-50  p-2">
               Topic here{" "}
             </button>
           </a>
@@ -38,7 +38,7 @@ const index = () => {
                 Admin
               </div>
             </div>
-            <p class="mb-3 font-normal text-[#1B2430]">
+            <p class="mb-3 mt-3 font-normal text-[#1B2430]">
               Gifting land back to nature, to reverse biodiversity loss, help to
               prevent natural disasters and bring nature back into balance. By
               purchasing, protecting and...
@@ -68,11 +68,11 @@ const index = () => {
           </div>
         </div>
 
-        <div class="max-w-[380px] relative bg-white  rounded-[10px] shadow max-h-fit">
+        <div class="max-w-[380px] relative bg-white  rounded-[10px] shadow  lg:h-[600px]">
           <a href="#">
             <img class="rounded-t-lg" src="/blog.svg" alt="" />
 
-            <button className="bg-[#1A401F] mt-6 flex justify-center max-w-[126px] items-center rounded-[66px] absolute top-[33%] left-[5%] z-50  p-2">
+            <button className="bg-[#1A401F] mt-0 md:mt-6 flex justify-center max-w-[126px] items-center rounded-[66px] absolute top-[30%] sm:top-[33%] left-[5%] z-50  p-2">
               Topic here{" "}
             </button>
           </a>
@@ -100,7 +100,7 @@ const index = () => {
                 Admin
               </div>
             </div>
-            <p class="mb-3 font-normal text-[#1B2430]">
+            <p class="mb-3 mt-3 font-normal text-[#1B2430]">
               Gifting land back to nature, to reverse biodiversity loss, help to
               prevent natural disasters and bring nature back into balance. By
               purchasing, protecting and...
@@ -130,10 +130,10 @@ const index = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center gap-y-6">
+        <div className="flex flex-col justify-center items-center gap-y-6 md:gap-y-4">
           {/* Upper */}
-          <div class="px-5 bg-[#fff]">
-            <button className="bg-[#1A401F] mt-6 flex justify-center max-w-[126px] items-center rounded-[66px]  z-50  p-2">
+          <div class="px-5 bg-[#fff] md:mt-0 mt-7">
+            <button style={{marginBottom: "12px"}} className="bg-[#1A401F]   flex justify-center max-w-[126px] items-center rounded-[66px]  z-50  p-2">
               Topic here{" "}
             </button>
             <a href="#">
@@ -189,7 +189,7 @@ const index = () => {
           </div>
           {/* Lower */}
           <div class="px-5 bg-[#fff]">
-            <button className="bg-[#1A401F]  flex justify-center max-w-[126px] items-center rounded-[66px]  z-50  p-2">
+            <button style={{marginBottom: "12px"}} className="bg-[#1A401F]  flex justify-center max-w-[126px] items-center rounded-[66px]  z-50  p-2">
               Topic here{" "}
             </button>
             <a href="#">

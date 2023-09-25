@@ -6,7 +6,7 @@ import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im';
 const index = () => {
     return (
         <div className='bg-[white]'>
-            <div className=' flex flex-col justify-center md:justify-between flex-wrap gap-y-6  gap-x-3 items-center px-6 max-w-[1300px] mx-auto py-[80px]'>
+            <div className=' flex flex-col justify-center md:justify-between flex-wrap gap-y-6  gap-x-3 items-center px-6 max-w-[1300px] mx-auto py-[50px]'>
                 <figure class="max-w-screen-md mx-auto text-center">
 
                     <blockquote className='flex flex-col justify-center items-start'>
